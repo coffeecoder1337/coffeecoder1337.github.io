@@ -1,0 +1,327 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+:root {
+	/*--color-accent: #f1b00f;*/
+	--color-accent: #ffd700;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Poiret One', cursive;
+	
+
+}
+
+.container {
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+}
+
+.item {
+	height: 100vh;
+	scroll-snap-align: start;
+	background-color: var(--color-accent);
+	color: #fff;
+	font-size: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#header {
+	background-image: url("https://belcasoft.com/wp-content/uploads/2019/09/engineers-consulting1.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+
+}
+
+.header {
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	height: 10%;
+	align-items: center;
+	background-color: #181818;
+	color: #fff;
+	padding-right: 30px;
+	padding-left: 30px;
+	opacity: .99;
+	/*margin-top: 10px;*/
+}
+
+.logo {
+	text-transform: uppercase;
+	font-size: 1.25em;
+	/*height: 100%;*/
+}
+
+.logo span {
+	color: var(--color-accent);
+}
+
+.logo img {
+	height: 100%;
+	width: 100%;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	font-size: 1.15em;
+}
+
+.menu-item {
+	/*padding: 10px;*/
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.menu-item:hover {
+	color: var(--color-accent);
+	transition: .5s;
+}
+
+.phone {
+	font-size: 1.2em;
+}
+
+
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414141;
+	opacity: .92;
+}
+
+
+.description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	opacity: .99;
+	/*margin-top: 10%;*/
+}
+
+.description h1 {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	font-size: 3.5em;
+}
+
+.description p {
+	width: 50vw;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.main-section {
+	height: 90%;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+	opacity: .99;
+
+}
+
+.button {
+	margin-bottom: 5%;
+}
+
+.button-link {
+	/*margin-bottom: 20px;*/
+	font-size: 3em;
+	text-decoration: none;
+	color: #fff;
+}
+
+.button-link:hover {
+	color: var(--color-accent);
+	transition: .5s;
+}
+
+/* header end */
+
+.company {
+	height: 100vh;
+	display: flex;
+}
+
+.left {
+	width: 50vw;
+	background-color: var(--color-accent);
+}
+
+.left h2 {
+	text-transform: uppercase;
+	font-size: 2em;
+	color: #fff;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	margin-left: 5%;
+}
+
+.left img {
+	width: 70%;
+	margin-left: 5%;
+}
+
+.right {
+	width: 50vw;
+}
+
+.right p {
+	font-size: 1.5em;
+	margin-top: 13%;
+	margin-right: 3%;
+	text-align: right;
+}
+
+/* about company end */
+
+
+.work {
+	text-align: right;
+	height: 100vh;
+	background-color: #2e2e2f;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+.work h2 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2em;
+	margin-right: 5%;
+
+}
+
+.cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card {
+	text-align: center;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card img {
+	width: 60%;
+	margin-bottom: 10px;
+}
+
+.card p {
+	color: #fff;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	width: 180px;
+	text-align: center;
+}
+
+.card a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	background-color: var(--color-accent);
+	width: 60%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.card a:hover {
+	transition: 1s;
+	filter: brightness(.8);
+}
+
+/* work end */
+
+.contacts {
+	height: 100vh;
+	width: 100%;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+
+.contacts h2 {
+	margin-left: 2.5%;
+	margin-top: 2%;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.contact-cards {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact-card {
+	/*width: 100%;*/
+	width: 100%;
+	padding: 70px 0;
+	text-align: center;
+	background-color: var(--color-accent);
+}
+
+.contact-card h3 {
+	font-size: 1.6em;
+	margin-bottom: 5px;
+}
+
+.contact-card p {
+	font-size: 1.3em;
+}
+
+
+.contact-card img {
+	width: 100px;
+	margin-bottom: 15px;
+
+}
+
+
+.first {
+	border-right: 10px solid #fff;
+}
+
+.third {
+	border-left: 10px solid #fff;
+}
+
+.footer {
+	display: flex;
+	background-color: #2e2e2f;
+	justify-content: space-around;
+}
+
+.footer {
+	color: #fff;
+	height: 75px;
+	align-items: center;
+}
